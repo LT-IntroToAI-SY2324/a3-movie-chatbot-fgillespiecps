@@ -217,6 +217,7 @@ pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
     (str.split("when was % made"), year_by_title),
     (str.split("% appeared in what movies"), title_by_actor),
     (str.split("in what movies did % appear"), title_by_actor),
+    (str.split("what other movies did % appear"), title_by_actor),
     (["bye"], bye_action),
 ]
 
@@ -275,6 +276,7 @@ if __name__ == "__main__":
     assert isinstance(actors_by_title(["jaws"]), list), "actors_by_title not returning a list"
     assert isinstance(year_by_title(["jaws"]), list), "year_by_title not returning a list"
     assert isinstance(title_by_actor(["orson welles"]), list), "title_by_actor not returning a list"
+    assert isinstance(title_by_actor(["1992"]), list), "title_by_year not returning a list"
     
     assert sorted(title_by_year(["1974"])) == sorted(
         ["amarcord", "chinatown"]

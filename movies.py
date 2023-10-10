@@ -425,6 +425,7 @@ movie_db: List[Tuple[str, str, int, List[str]]] = [
     (
         "malcolm x",
         "spike lee",
+        "candyman",
         1992,
         [
             "denzel washington",
