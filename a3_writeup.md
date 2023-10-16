@@ -18,6 +18,6 @@ You could create a chatbot that for sports. You can have years, games, players, 
 The most difficult part of the assignment was understanding the code. Learning about the new functions and its uses to implement into the group project was challenging.
 
 6. Did you write a new assert for your pattern action?
-Added an assert for the movie.
+Added an assert for the movie. 
 
 
